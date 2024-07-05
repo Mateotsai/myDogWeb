@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <title>MyDog</title>
+    <style>
+    body{
+        padding-top: 56px;
+        }
+    #homeDog{
+        height: 140px;
+
+    }
+    nav[class^=navbar]{
+        height: 140px;
+        background-color: rgb(136, 135, 139);
+        padding: 0px; 
+        margin: 0px;
+    }
+    ul[class^=navbar]{
+        height: 140px;
+        font-size: 30px;
+        font-weight: 1000;
+        
+    }
+    #barLog{
+        background-color: rgb(48, 199, 199);
+        height: 100%;
+        width: 140px;
+        text-align: center;
+        align-content: center;
+    }
+    #signLog{
+        background-color: rgb(142, 192, 26);
+        text-align: center;
+        align-content: center;
+    }
+    nav li:hover{
+        background-color: rgb(122, 77, 19);
+    }
+    .nav-link {
+        padding: 0.75rem 1.25rem;
+    }
+    .navbar-nav .nav-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 140px; /* Match the height of the navbar */
+    }
+
+    #navbarNav {
+    justify-content: space-between; /* Ensure space between left and right sections */
+    }
+    
+
+
+    </style>
+
+   
+
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container-fluid" style="padding: 0px; margin: 0px;">
+        <a class="navbar-brand " href="#" style="padding: 0px; margin: 0px;"> <img src="./image/homedog.jpg" id="homeDog" alt="HOME" >
+       <!-- 之後要補上網頁副標題，目前的困難是不知道怎麼讓他向左向右靠 -->
+        </a>
+        <!-- 螢幕小的時候可收束的按鈕 -->
+        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active"  id="barLog">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item" id="barLog">
+              <a class="nav-link" href="http://www.google.com">Features</a>
+            </li>
+            <li class="nav-item" id="barLog">
+              <a class="nav-link" href="http://www.google.com">Pricing</a>
+            </li>
+            <li class="nav-item" id="barLog">
+              <a class="nav-link" href="http://www.google.com">Inter</a>
+            </li>
+            <li class="nav-item" id="barLog">
+                <a class="nav-link" href="http://www.google.com">Shop</a>
+            </li>
+            <li class="nav-item" id="barLog">
+                <a class="nav-link" href="http://www.google.com">Photo</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="signLog">
+                <a href="#" class="nav-link">login</a>
+            </li>
+            <li class="nav-item" id="signLog">
+                <a href="#" class="nav-link">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      
+      <!-- 按鈕 -->
+      <!-- <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link">Link</button> -->
+     
+    <!-- 主內容 -->
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple example of a Bootstrap-styled page.</p>
+          </div>
+        </div>
+    
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./image/dog.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./image/dog.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./image/dog.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 卡片 -->
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+</body>
+</html>
