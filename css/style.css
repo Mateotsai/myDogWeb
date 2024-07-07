@@ -1,3 +1,4 @@
+   /* <通用區> */
   .pageTitle {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
@@ -6,11 +7,19 @@
   
   .logIn{
     position: absolute;
+    padding:3px;
     right: 3px;
     bottom: 5px;
-    font-size: 15px;
-    padding:2px;
-    box-shadow: 3px 3px 10px rgb(51, 95, 51);
+    font-size: 12px;
+    font-weight:bolder;
+    color: black;
+    background-color:rgb(118, 151, 114) ;
+    box-shadow: 5px 5px 5px rgb(51, 95, 51);
+    
+  }
+  .logIn:hover{
+    background-color:rgb(32, 90, 32) ;
+    color: white;
   }
   .nav-item{
     width:max-content ;
@@ -40,3 +49,4 @@
   }
   
  
+  

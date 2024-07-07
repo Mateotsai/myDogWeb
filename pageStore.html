@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>犬屯區狗奴交流網 - 犬犬餐廳</title>
+    <title>犬屯區狗奴交流網 - 犬犬百貨</title>
     <link rel="shortcut icon" href="./image/favicon.icon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <style>
+       <style>
       .titleBanner{
         background-image: url(./image/bannerTransparent.png);
         height: 70px;
@@ -22,13 +21,65 @@
         background-color: rgb(118, 151, 114);
         position: relative;
       }
-
       .sticky-sidebar {
-            position: -webkit-sticky; 
-            position: sticky;
-            top: 117px; 
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 117px; 
+      }
+      /* 購物車 */
+
+      #containerShop{
+        background-color: rgb(204, 230, 201);
+        width: 600px;
+        margin: 10px auto;
+        padding: 10px 50px;
+        border-radius: 5px;
+      }
+      .todo-list-title {   
+        background-color: rgb(78, 139, 94);
+        text-align: center;
+        padding: 10px;
+        font-weight: bolder;
+      }
+      .inner-wrapper {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        font-weight: 800;
+        background-color: rgb(148, 179, 158);
       }
 
+      .cartList {
+        list-style:none;
+        padding: 0px;
+        border-bottom: 1px solid black;
+      }
+
+      .list li{
+        vertical-align: middle;
+        font-weight: 200;
+        padding-left: 10px;
+        position: relative;
+        font-size: 15px;
+            }
+
+      .delete {
+        background-image: url('./image/x-lg.svg');
+        padding: 6px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit:cover;
+        position:absolute;
+        right:5px;
+        top:5px;
+        width: 15px;
+        height: 15px;
+      }
+
+      .delete:hover{
+        background-color: #429e79;
+        cursor: pointer;
+      }
 
     </style>
   </head>
@@ -72,10 +123,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./pageRestaurent.html">|　犬犬餐廳</a>
+              <a class="nav-link" href="./pageRestaurent.html">|　犬犬餐廳</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pageStore.html">|　犬犬百貨</a>
+              <a class="nav-link active" href="#">|　犬犬百貨</a>
             </li>
                           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,277 +145,154 @@
     </nav>
     </div>
 
-
 <!-- 主內容 -->
 <div class="container mt-4">
   <div class="row">
     <!-- 左邊選擇器 -->
-    <div class="col-2 bg-light sticky-sidebar" style="height: 100vh; margin-top: 94px;">
-    <h5><i class="bi bi-filter-left"></i> 地區</h5>
+    <div class="col-3 bg-light sticky-sidebar" style="height: 100vh; margin-top: 94px;">
+    <h5><i class="bi bi-filter-left"></i> 遛狗必備</h5>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        中區
+        背帶 | 項圈
       </label>
       </div>
       <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        西區
+        牽繩
       </label>
       </div>
       <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        西屯區
+        拾便袋
       </label>
       </div>
           <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        北區
+        水壺
       </label>
       </div>
           <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        北屯區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        南區
-      </label>
-      </div>
-      <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        南屯區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        東區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        太平區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        霧峰區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        烏日區
-      </label>
-      </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        豐原區
+        零食包
       </label>
       </div>
       <hr>
-      <h5><i class="bi bi-filter-left"></i> 服務</h5>
-      <div class="form-check">
+      <h5><i class="bi bi-filter-left"></i> 犬犬愛吃</h5>
+          <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        寵物可落地
+        寵物飼料
       </label>
       </div>
       <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        寵物專屬空間
+        零食 | 肉乾
       </label>
       </div>
       <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
-        寵物專屬餐
+        潔牙骨
       </label>
       </div>
-
-
-
+      <hr>
+      <h5><i class="bi bi-filter-left"></i> 犬犬愛玩</h5>   
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        球類
+      </label>
+      </div>
+          <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        拉扯玩具
+      </label>
+      </div>
+      <hr>
+      <h5><i class="bi bi-filter-left"></i> 犬犬愛乾淨</h5>   
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        清潔噴霧
+      </label>
+      </div>
+          <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        口腔用品
+      </label>
+      </div>
 
     </div>
     <!-- 右邊展示區 -->
-      <div class="col-10">
+      <div class="col-9">
           <div class="row">
             <div class="col-md-12">
-             <h1 class="pageTitle text-center">狗狗友善餐廳分享</h1>
-              <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>　歡迎接待狗狗的友善，歡迎狗友們持續分享！</strong></p>
+             <h1 class="pageTitle text-center">狗狗用品購物區</h1>
+              <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>好物推薦分享，你們家狗狗都愛用什麼？</strong></p>
             </div>
         <!-- 卡片區 -->
-            <div class="col-lg-4 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card">
                 <img src="./image/LOGO.png" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">店家名稱</h5>
+                  <h5 class="card-title"><i ></i> 商品名稱</h5>
                   <p class="card-text">
                     <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li>寵物專屬空間</li>
-                      <li>寵物專屬餐</li>
+                      <li><i></i>產品編號： AB12345</li>
+                      <li>產品敘述</li>
+                      <li>$ NT: <span id="price">485</span></li>
+                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
                     </ul>
                   </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
+                  <div class="mb-1">
+                    <label for="sizeSelect" class="form-label">商品尺寸</label>
+                    <select class="form-select" id="sizeSelect">
+                        <option selected>選擇尺寸</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="quantitySelect" class="form-label">選擇數量</label>
+                    <select class="form-select" id="quantitySelect">
+                        <option selected>選擇數量</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button class="btn btn-success w-100" id="addToCartButton">加入購物車</button>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">店家名稱</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li>寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-3">
-              <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    <ul>
-                      <li>北屯區</li>
-                      <li>寵物可落地</li>
-                      <li class="text-decoration-line-through">寵物專屬空間</li>
-                      <li class="text-decoration-line-through">寵物專屬餐</li>
-                    </ul>
-                  </p>
-                  <a href="#" class="btn btn-success">店家官網</a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         
-
       </div>
       </div>
+ <!-- 購物車 -->
+  <div class="container" id="containerShop">
+        <div class="inner-wrapper">
+            <h3 class="todo-list-title">購物車</h3>
+            <ul class="list" id="cartList">
+            </ul>
+        </div>
+     </div>
+   </div>
+</div>
 
 <!-- footer -->
 <footer class="footer text-center text-lg-start mt-2">
@@ -401,6 +329,35 @@
   </div>
 </footer>
 
+
+<script>
+  document.getElementById('addToCartButton').addEventListener('click', function() {
+      const productName = document.querySelector('.card-title').innerText;
+      const size = document.getElementById('sizeSelect').value;
+      const quantity = document.getElementById('quantitySelect').value;
+      const price = document.getElementById('price').innerText;
+
+      if (size === "選擇尺寸" || quantity === "選擇數量") {
+          alert("請選擇尺寸和數量");
+          return;
+      }
+
+      const totalPrice = quantity * price;
+
+      const cartList = document.getElementById('cartList');
+      const newItem = document.createElement('li');
+      newItem.classList.add('item');
+      newItem.innerHTML = `${productName} - 尺寸: ${size}, 數量: ${quantity}, 金額: $${totalPrice}
+          <span class="delete"></span>`;
+
+      cartList.appendChild(newItem);
+
+      // 添加删除按钮的事件监听器
+      newItem.querySelector('.delete').addEventListener('click', function() {
+          this.parentElement.remove();
+      });
+  });
+</script>
 
 
 
