@@ -12,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
     <script src="js/scriptRestaurent.js" defer></script>
-    <style>
+    <style>   
       .titleBanner{
-        background-image: url(./image/bannerTransparent.png);
+        background-image: 
+        url(./image/bannerTransparent.png), 
+        linear-gradient(10deg, rgb(233, 236, 183) 0%, rgb(16, 135, 103));
         height: 70px;
         background-repeat: no-repeat;
         background-size:auto;
         background-position: center;
-        background-color: rgb(118, 151, 114);
         position: relative;
       }
 
@@ -28,6 +29,7 @@
             position: sticky;
             top: 123px; 
       }
+
 
 
     </style>
@@ -98,8 +100,12 @@
 <!-- 主內容 -->
 <div class="container mt-4">
   <div class="row">
+    <div class="col-md-12" >
+      <h1 class="pageTitle text-center">狗狗友善餐廳分享</h1>
+       <p class="lead text-center"><i class="bi bi-megaphone-fill"></i><strong>　歡迎接待狗狗的友善，歡迎狗友們持續分享！</strong></p>
+     </div>
     <!-- 左邊選擇器 -->
-    <div class="col-3 col-md-2 bg-light sticky-sidebar" style="height: 100vh; margin-top: 119px;">
+    <div class="col-3 col-md-2 bg-light mt-3 sticky-sidebar" style="height: 100vh; margin-top: 160px;">
     <h5><i class="bi bi-filter-left"></i> 地區</h5>
     <div class="form-check">
       <label class="form-check-label">
@@ -201,11 +207,8 @@
     <!-- 右邊展示區 -->
       <div class="col-9 col-md-10">
           <div class="row" id="productContainer">
-            <div class="col-md-12">
-             <h1 class="pageTitle text-center">狗狗友善餐廳分享</h1>
-              <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>　歡迎接待狗狗的友善，歡迎狗友們持續分享！</strong></p>
-            </div>
-        <!-- 卡片區 -->
+            
+            <!-- 卡片區 -->
             <!-- 餐廳1 -->
             <div class="col-lg-4 col-md-6 mt-3 product-card" data-district="北屯區" data-services="寵物可落地,寵物專屬空間">
               <div class="card">
@@ -290,7 +293,7 @@
                       <li>寵物可落地</li>
                       <li>寵物專屬空間</li>
                       <li>寵物專屬餐</li>
-                    </ul
+                    </ul>
                   </p>
                   <a href="#" class="btn btn-success">店家官網</a>
                 </div>
@@ -374,16 +377,16 @@
 
       </div>
       </div>
-
+    
 <!-- footer -->
 <footer class="footer text-center text-lg-start mt-2">
   <div class="container p-2">
       <div class="row">
-          <div class="col-lg-6 col-md-12 mb-0 mb-md-0">
-              <img src="./image/bannerTransparent.png" style="height: 40px; margin-top: 20px;">
+          <div class="col-lg-6 col-md-12 mt-4">
+            <img src="./image/bannerTransparent.png" style="height: 40px; margin-top: 5px;">
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0";>
-              <ul class="list-unstyled mb-0 mt-1">
+          <div class="col-lg-3 col-md-6 col-6 mb-2";>
+              <ul class="list-unstyled mb-0 mt-3">
                   <li>
                   <a href="#!" class="text-white" style="text-decoration: none;"><i class="bi bi-instagram"></i>　@dog_garrison</a>
                   </li>
@@ -395,7 +398,7 @@
                   </li>               
               </ul>
           </div>
-          <div class="col-lg-3 col-md-6 mt-1">
+          <div class="col-lg-3 col-md-6 col-6 mt-3">
               <img src="./image/LineInk.png">
           </div>
       </div>

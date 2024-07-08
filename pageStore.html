@@ -11,14 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
-           <style>
+    <style>
       .titleBanner{
-        background-image: url(./image/bannerTransparent.png);
+        background-image: 
+        url(./image/bannerTransparent.png), 
+        linear-gradient(10deg, rgb(233, 236, 183) 0%, rgb(16, 135, 103));
         height: 70px;
         background-repeat: no-repeat;
         background-size:auto;
         background-position: center;
-        background-color: rgb(118, 151, 114);
         position: relative;
       }
       .sticky-sidebar {
@@ -95,8 +96,12 @@
 <!-- 主內容 -->
 <div class="container mt-4">
   <div class="row">
+    <div class="col-md-12">
+      <h1 class="pageTitle text-center">狗狗用品購物區</h1>
+       <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>好物推薦分享，你們家狗狗都愛用什麼？</strong></p>
+     </div>
     <!-- 左邊選擇器 -->
-    <div class="col-3 col-md-2 bg-light sticky-sidebar" style="height: 100vh; margin-top: 119px;">
+    <div class="col-3 col-md-2 bg-light mt-3 sticky-sidebar" style="height: 100vh; margin-top: 120px;">
     <h5><i class="bi bi-filter-left"></i> 遛狗必備</h5>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -181,10 +186,7 @@
     <!-- 右邊展示區 -->
       <div class="col-9 col-md-10">
           <div class="row">
-            <div class="col-md-12">
-             <h1 class="pageTitle text-center">狗狗用品購物區</h1>
-              <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>好物推薦分享，你們家狗狗都愛用什麼？</strong></p>
-            </div>
+            
         <!-- 卡片區 -->
             <!-- 產品1號 -->
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
@@ -678,11 +680,11 @@
 <footer class="footer text-center text-lg-start mt-2">
   <div class="container p-2">
       <div class="row">
-          <div class="col-lg-6 col-md-12 mb-0 mb-md-0">
-              <img src="./image/bannerTransparent.png" style="height: 40px; margin-top: 20px;">
+          <div class="col-lg-6 col-md-12 mt-4">
+            <img src="./image/bannerTransparent.png" style="height: 40px; margin-top: 5px;">
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0";>
-              <ul class="list-unstyled mb-0 mt-1">
+          <div class="col-lg-3 col-md-6 col-6 mb-2";>
+              <ul class="list-unstyled mb-0 mt-3">
                   <li>
                   <a href="#!" class="text-white" style="text-decoration: none;"><i class="bi bi-instagram"></i>　@dog_garrison</a>
                   </li>
@@ -694,7 +696,7 @@
                   </li>               
               </ul>
           </div>
-          <div class="col-lg-3 col-md-6 mt-1">
+          <div class="col-lg-3 col-md-6 col-6 mt-3">
               <img src="./image/LineInk.png">
           </div>
       </div>
