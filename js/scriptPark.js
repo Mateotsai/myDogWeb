@@ -28,3 +28,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+// 導覽鈕變色用
+document.querySelectorAll('.a-word').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.a-word').forEach(link => link.classList.remove('selected'));
+    this.classList.add('selected');
+  });
+});

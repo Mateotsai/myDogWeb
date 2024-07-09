@@ -3,63 +3,63 @@ document.addEventListener('DOMContentLoaded', function () {
     const products = [
         {
             "name": "汪星人咖啡廳",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest1.png",
             "district": "北屯區",
             "services": ["寵物可落地", "寵物專屬空間"],
             "url": "#"
         },
         {
             "name": "角落",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest2.png",
             "district": "中區",
             "services": ["寵物可落地", "寵物專屬空間", "寵物專屬餐"],
             "url": "#"
         },
         {
             "name": "踏踏地球",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest3.png",
             "district": "西屯區",
             "services": ["寵物可落地"],
             "url": "#"
         },
         {
             "name": "尾巴搖搖",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest4.png",
             "district": "西區",
             "services": ["寵物可落地","寵物專屬空間", "寵物專屬餐"],
             "url": "#"
         },
         {
             "name": "毛茶屋",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest5.png",
             "district": "西區",
             "services": ["寵物可落地"],
             "url": "#"
         },
         {
             "name": "趴趴走吧",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest6.png",
             "district": "北區",
             "services": ["寵物可落地", "寵物專屬空間"],
             "url": "#"
         },
         {
             "name": "愛犬廚房",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest7.png",
             "district": "中區",
             "services": ["寵物可落地", "寵物專屬空間", "寵物專屬餐"],
             "url": "#"
         },
         {
             "name": "毛五木",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest8.png",
             "district": "北屯區",
             "services": ["寵物可落地"],
             "url": "#"
         },
         {
             "name": "森林小徑",
-            "image": "./image/LOGO.png",
+            "image": "./image/rest9.png",
             "district": "西區",
             "services": ["寵物可落地"],
             "url": "#"

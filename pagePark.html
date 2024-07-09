@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/stylePark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9OOI1VXMIAI5VX-eJPd-vxvJ69c_yRwo&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
       <style>
       .titleBanner{
@@ -23,6 +25,15 @@
         background-position: center;
         position: relative;
       }
+
+      .sticky-sidebar {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 119px; 
+            height: 100vh;
+            margin-top: 160px;
+      }
+
      </style>
 
   </head>
@@ -70,7 +81,7 @@
               <a class="nav-link" href="./pageRestaurent.html">|　犬犬餐廳</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">|　犬犬百貨</a>
+              <a class="nav-link" href="./pageStore.html">|　犬犬百貨</a>
             </li>
                           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -89,73 +100,44 @@
     </nav>
   </div>
 
-<!-- 標題 -->
-<div class="container mt-3">
-    <h1 class="pageTitle text-center">讓狗狗放心奔跑的寵物公園</h1>
-       <p class="lead text-center"><i class="bi bi-megaphone-fill"><strong></i>　結至2024/07/12，台中共10座有寵物專區的公園，讓毛孩和主人們放心交朋友</strong></p>
-</div>
- 
-  <div class="container">
-    <div class="row">
-   <!-- 左邊連結處 -->
-      <div class="col-3 col-md-2 bg-light mt-3 sticky-sidebar d-flex flex-column align-items-center" style="height: 100vh; margin-top: 120px;">
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 南屯區</h5>
-      <a href="#" class="a-word">文心森林公園</a>
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 東區</h5>
-      <a href="#" class="a-word">泉源公園</a>
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 西屯區</h5>
-      <a href="#" class="a-word">協仁公園</a>   
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 北屯區</h5>
-      <a href="#" class="a-word">新平公園</a>  
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 太平區</h5>
-      <a href="#" class="a-word" style="font-size: 14px;">馬卡龍公園</a>  
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 南區</h5>
-      <a href="#" class="a-word">健康公園</a>    
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 豐原區</h5>
-      <a href="#" class="a-word">社皮公園</a>   
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 清水區</h5>
-      <a href="#" class="a-word">公69公園</a>  
-      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 后里區</h5>
-      <a href="#" class="a-word">環保公園</a>
-    </div>
 
-<!-- 右邊圖片區 -->
-<div class="col-9 col-md-10">
-  <div class="container" style="max-width: 600px">
+<!-- 圖片 -->
+<div style="background-image: url(./image/parkbackground.webp); background-repeat: no-repeat; background-size: cover;">
+<div class="container" style="max-width:800px; border: 5px rgb(15, 15, 15) solid;">
   <div class="mySlides">
-    <div class="numbertext">1 / 9</div>
+    <div class="numbertext">南屯區</div>
     <img src="./image/park1.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">2 / 9</div>
+    <div class="numbertext">東區</div>
     <img src="./image/park2.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">3 / 9</div>
+    <div class="numbertext">西屯區</div>
     <img src="./image/park3.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">4 / 9</div>
+    <div class="numbertext">北屯區</div>
     <img src="./image/park4.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">5 / 9</div>
-    <img src="./image/park5.webp" style="width:100%">
+    <div class="numbertext">太平區</div>
+    <img src="./image/park5.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">6 / 9</div>
+    <div class="numbertext">南區</div>
     <img src="./image/park6.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">7 / 9</div>
+    <div class="numbertext">豐原區</div>
     <img src="./image/park7.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">8 / 9</div>
+    <div class="numbertext">清水區</div>
     <img src="./image/park8.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">9 / 9</div>
+    <div class="numbertext">后里區</div>
     <img src="./image/park9.jpg" style="width:100%">
   </div>
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -177,25 +159,167 @@
       <img class="demo cursor" src="./image/park4.jpg" style="width:100%" onclick="currentSlide(4)" alt="新平公園">
     </div>
     <div class="column">
-      <img class="demo cursor" src="./image/park5.webp" style="width:100%" onclick="currentSlide(5)" alt="馬卡龍公園">
+      <img class="demo cursor" src="./image/park5.jpg" style="width:100%" onclick="currentSlide(5)" alt="馬卡龍公園">
     </div>
     <div class="column">
-      <img class="demo cursor" src="./image/park6.jpg" style="width:100%" onclick="currentSlide(6)" alt="健康公園">
+      <img class="demo cursor mt-2" src="./image/park6.jpg" style="width:100%" onclick="currentSlide(6)" alt="健康公園">
     </div>
     <div class="column">
-      <img class="demo cursor" src="./image/park7.jpg" style="width:100%" onclick="currentSlide(7)" alt="社皮公園">
+      <img class="demo cursor mt-2" src="./image/park7.jpg" style="width:100%" onclick="currentSlide(7)" alt="社皮公園">
     </div>
     <div class="column">
-      <img class="demo cursor" src="./image/park8.jpg" style="width:100%" onclick="currentSlide(8)" alt="公69公園">
+      <img class="demo cursor mt-2" src="./image/park8.jpg" style="width:100%" onclick="currentSlide(8)" alt="公69公園">
     </div>
     <div class="column">
-      <img class="demo cursor" src="./image/park9.jpg" style="width:100%" onclick="currentSlide(9)" alt="環保公園">
+      <img class="demo cursor mt-2" src="./image/park9.jpg" style="width:100%" onclick="currentSlide(9)" alt="環保公園">
      </div>
-    </div>
-   </div>
   </div>
- </div>
-</div> 
+</div>
+</div>
+  <!-- 下面區塊 -->
+<div class="container">
+    <div class="row">
+   <!-- 左邊連結處 -->
+      <div class="col-3 col-md-2 bg-light mt-3 sticky-sidebar d-flex flex-column align-items-center">
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 南屯區</h5>
+      <a href="#park1" class="a-word mb-2">文心森林公園</a>
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 東區</h5>
+      <a href="#park2" class="a-word mb-2">泉源公園</a>
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 西屯區</h5>
+      <a href="#park3" class="a-word mb-2">協仁公園</a>   
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 北屯區</h5>
+      <a href="#park4" class="a-word mb-2">新平公園</a>  
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 太平區</h5>
+      <a href="#park5" class="a-word mb-2">馬卡龍公園</a>  
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 南區</h5>
+      <a href="#park6" class="a-word mb-2">健康公園</a>    
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 豐原區</h5>
+      <a href="#park7" class="a-word mb-2">社皮公園</a>   
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 清水區</h5>
+      <a href="#park8" class="a-word mb-2">公69公園</a>  
+      <h5 class="h-5word"><i class="bi bi-geo-alt-fill"></i> 后里區</h5>
+      <a href="#park9" class="a-word">環保公園</a>
+    </div>
+
+    <!-- 右邊介紹區 -->
+    <div class="col-9 col-md-10">
+  
+    <!-- 公園1 -->         
+   <div class="media mt-3 container mapPark" id="park1">
+        <img src="./image/park1.jpg" alt="文心森林公園" style="width:80%;">
+          <div class="media-body">
+            <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 南屯區</h5>
+            <p class="a-word2 mb-2">文心森林公園</p>
+            <p class="left-aligned-indent">文心森林公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+              　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+              　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+            </p>
+            <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　文心森林公園</a>
+            <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+            </gmp-map>
+          </div>     
+    </div> 
+    <!-- 公園2 -->         
+    <div class="media mt-3 container mapPark" id="park2">
+      <img src="./image/park2.jpg" alt="泉源公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 東區</h5>
+          <p class="a-word2 mb-2">泉源公園</p>
+          <p class="left-aligned-indent">泉源公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　泉源公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園3 -->         
+    <div class="media mt-3 container mapPark" id="park3">
+      <img src="./image/park3.jpg" alt="協仁公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 西屯區</h5>
+          <p class="a-word2 mb-2">協仁公園</p>
+          <p class="left-aligned-indent">協仁公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　協仁公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園4 -->         
+    <div class="media mt-3 container mapPark" id="park4">
+      <img src="./image/park4.jpg" alt="新平公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 北屯區</h5>
+          <p class="a-word2 mb-2">新平公園</p>
+          <p class="left-aligned-indent">新平公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　新平公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園5 -->         
+    <div class="media mt-3 container mapPark" id="park5">
+      <img src="./image/park5.jpg" alt="馬卡龍公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 太平區</h5>
+          <p class="a-word2 mb-2">馬卡龍公園</p>
+          <p class="left-aligned-indent">馬卡龍公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　馬卡龍公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園6 -->         
+    <div class="media mt-3 container mapPark" id="park6">
+      <img src="./image/park6.jpg" alt="健康公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 南區</h5>
+          <p class="a-word2 mb-2">健康公園</p>
+          <p class="left-aligned-indent">健康公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　健康公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園7 -->         
+    <div class="media mt-3 container mapPark" id="park7">
+      <img src="./image/park7.jpg" alt="社皮公園" style="width: 80%;">
+        <div class="media-body">
+          <h5 class="h-5word2"><i class="bi bi-geo-alt-fill"></i> 豐原區</h5>
+          <p class="a-word2 mb-2">社皮公園</p>
+          <p class="left-aligned-indent">社皮公園是台中第二座專為狗狗設計的公園，佔地8.88公頃，設施完善，包括兒童遊戲區、沙坑、飛碟鞦韆、溜冰場、公廁、親子廁所和步道等。 <br>
+            　　文心森林公園對寵物非常友善，整座公園都是狗狗的探索遊樂場，狗狗專屬區域更是讓狗狗們盡情跑跳的好地方。帶著狗狗來這裡散步，玩累了還可以前往附近的寵物友善餐廳休息一下。公園交通便利，停車場就在狗狗活動區旁邊，十分方便。 <br>
+            　　雖然這裡的狗狗活動區不大，沒有遮陽處和樹蔭，但園內提供狗便袋和垃圾桶，方便主人隨時清理狗狗的排泄物。夏天來此，記得防暑，帶著狗狗享受一個愉快的戶外時光。
+          </p>
+          <a href="https://maps.app.goo.gl/4PxQV7F83iZSqmb88" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">Google Map　|　社皮公園</a>
+          <gmp-map center="24.14629364013672,120.64581298828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="24.14629364013672,120.64581298828125" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+        </div>     
+  </div> 
+    <!-- 公園結束 -->        
+      </div>
+     </div>
+    </div> 
       
 
 <!-- footer -->

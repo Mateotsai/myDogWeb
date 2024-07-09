@@ -2,22 +2,19 @@
     box-sizing: border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
+    padding: 0;
   }
   
-  /* Hide the images by default */
   .mySlides {
     display: none;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
   .cursor {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
   .prev,
   .next {
     cursor: pointer;
@@ -34,35 +31,31 @@
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
+    color: #faf7f7;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    border-radius: 5px;
   }
   
-  /* Container for image text */
   .caption-container {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
-    /* padding: 18px 16px 10px 8px; */
     color: white;
-    font-size: 40px;
-    /* font-family: "LXGW WenKai Mono TC", monospace; */
+    font-size: 40px; 
 
   }
   
@@ -72,13 +65,11 @@
     clear: both;
   }
   
-  /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 20%;
   }
   
-  /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
   }
@@ -88,7 +79,32 @@
     opacity: 1;
   }
 
+  /* Google Map */
+  gmp-map {
+    height: 200px;
+  }
 
+  .mapPark{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    border-bottom: 2px dashed rgb(180, 178, 178);
+    padding: 10px 10px 30px 10px;
+  }
+
+  .media-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .selected{
+    box-shadow: 5px 5px 5px rgb(14, 129, 85);
+    }
 
 
   /* 通用CSS */
@@ -107,8 +123,30 @@
     font-weight: bold;
     font-size: 14px;
   }
+  
+  .a-word:active{
+    box-shadow: 5px 5px 5px rgb(14, 129, 85);
+  }
 
   .a-word:hover{
     background-color: rgb(6, 129, 80);
+  }
+
+  .h-5word2{
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 10px;
+    padding: 10px,0, 0, 0;
+    margin: 0;
+  }
+
+  .a-word2{
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    padding: 1px;
+    border-radius: 20px 3px 20px 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
   }
 

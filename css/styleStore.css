@@ -1,0 +1,123 @@
+/* body {
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  } */
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .sticky-sidebar {
+    height: 100vh;
+    margin-top: 120px;
+  }
+  
+  .product-card {
+    display: none;
+  }
+  
+  .product-card[data-category="harness"],
+  .product-card[data-category="leash"],
+  .product-card[data-category="bottle"],
+  .product-card[data-category="treats"],
+  .product-card[data-category="food"],
+  .product-card[data-category="snacks"],
+  .product-card[data-category="chew"],
+  .product-card[data-category="ball"],
+  .product-card[data-category="tug"],
+  .product-card[data-category="spray"],
+  .product-card[data-category="oral"] {
+    display: block;
+  }
+
+
+
+  
+
+  /* 購物車 */
+
+  #containerShop{
+    background-color: rgb(204, 230, 201);
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 5px;
+  }
+  .cart-list-title {   
+    background-color: rgb(78, 139, 94);
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  .inner-wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    font-weight: bolder;
+    background-color: rgb(148, 179, 158);
+    padding: 15px;
+  }
+
+  #cartList {
+    list-style:none;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .list li{
+    vertical-align: middle;
+    font-weight: 200;
+    padding-left: 10px;
+    position:relative;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    padding: 5px 0 5px 10px;
+        }
+
+  .delete {
+    background-image: url('../image/x-lg.svg');
+    padding: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit:cover;
+    position:absolute;
+    right:5px;
+    top:10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .delete:hover{
+    background-color: #429e79;
+    cursor: pointer;
+  }
+
+  .total-amount-container{
+    background-color: rgb(217, 223, 219);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0px 0 20px;
+  }
+
+  #totalAmount{
+    border-bottom: 1px solid black;
+    padding-left: 30px;
+  }
+
+  #checkoutButton {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgb(22, 156, 67);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px 5px 1px 0 ;
+}
+
+#checkoutButton:hover {
+  background-color: darkblue;
+}
+
+.add-to-cart-button:active {
+    box-shadow: 5px 5px 5px rgb(63, 65, 64);
+}
