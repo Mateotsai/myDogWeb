@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleStore.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
@@ -50,9 +51,9 @@
                 |　犬友交流區
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">|　活動消息</a></li>
-                <li><a class="dropdown-item" href="#">|　照片分享</a></li>
-                <li><a class="dropdown-item" href="#">|　遛狗五四三-留言板</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　活動消息</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　照片分享</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　遛狗五四三-留言板</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">|　關於我們</a></li>
               </ul>
@@ -65,7 +66,7 @@
                 |　犬犬好去處
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">|　寵物專區公園</a></li>
+                <li><a class="dropdown-item" href="./pagePark.html">|　寵物專區公園</a></li>
                 <li><a class="dropdown-item" href="#">|　寵物友善場所</a></li>
                 <li><a class="dropdown-item" href="#">|　戶外遛狗景點</a></li>
               </ul>
@@ -104,80 +105,80 @@
     <div class="col-3 col-md-2 bg-light mt-3 sticky-sidebar" style="height: 100vh; margin-top: 120px;">
     <h5><i class="bi bi-filter-left"></i> 遛狗必備</h5>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="harness" id="harnessCheckbox">
+      <label class="form-check-label" for="harnessCheckbox">
         背帶 | 項圈
       </label>
       </div>
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="leash" id="leashCheckbox">
+      <label class="form-check-label" for="leashCheckbox">
         牽繩
       </label>
       </div>
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="bags" id="bagsCheckbox">
+      <label class="form-check-label" for="bagsCheckbox">
         拾便袋
       </label>
       </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <div class="form-check">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="bottle" id="bottleCheckbox">
+      <label class="form-check-label" for="bottleCheckbox">
         水壺
       </label>
       </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <div class="form-check">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="treats" id="treatsCheckbox">
+      <label class="form-check-label" for="treatsCheckbox">
         零食包
       </label>
       </div>
       <hr>
       <h5><i class="bi bi-filter-left"></i> 犬犬愛吃</h5>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <div class="form-check">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="food" id="foodCheckbox">
+      <label class="form-check-label" for="foodCheckbox">
         寵物飼料
       </label>
       </div>
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="snacks" id="snacksCheckbox">
+      <label class="form-check-label" for="snacksCheckbox">
         零食 | 肉乾
       </label>
       </div>
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="chew" id="chewCheckbox">
+      <label class="form-check-label" for="chewCheckbox">
         潔牙骨
       </label>
       </div>
       <hr>
       <h5><i class="bi bi-filter-left"></i> 犬犬愛玩</h5>   
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="ball" id="ballCheckbox">
+      <label class="form-check-label" for="ballCheckbox">
         球類
       </label>
       </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <div class="form-check">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="tug" id="tugCheckbox">
+      <label class="form-check-label" for="tugCheckbox">
         拉扯玩具
       </label>
       </div>
       <hr>
       <h5><i class="bi bi-filter-left"></i> 犬犬愛乾淨</h5>   
       <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="spray" id="sprayCheckbox">
+      <label class="form-check-label" for="sprayCheckbox">
         清潔噴霧
       </label>
       </div>
-          <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <div class="form-check">
+      <input class="form-check-input filter-checkbox" type="checkbox" value="oral" id="oralCheckbox">
+      <label class="form-check-label" for="oralCheckbox">
         口腔用品
       </label>
       </div>
@@ -189,17 +190,17 @@
             
         <!-- 卡片區 -->
             <!-- 產品1號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="harness">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i></i> 一號項圈</h5>
+                <img src="./image/good1harness.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i></i>防爆背帶</h5>
                   <p class="card-text">
                     <ul>
                       <li><i></i>產品編號：<span class="product-id"> AB12345</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">485</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li>產品敘述：<br>很貴｜但很好用</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">1188</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
@@ -223,32 +224,30 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-                <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品2號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="leash">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 二號背帶</h5>
+                <img src="./image/good2leash.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i>拉不斷牽繩</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">199</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB12346</span></li>
+                      <li>產品敘述： <br>遛狗綁貨都好用，用斷包賠</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">488</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
-                        <option value="XL">XL</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -262,32 +261,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品3號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="leash">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good3leash.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 拉得斷牽繩</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB13247</span></li>
+                      <li>產品敘述： <br>用的斷，所以便宜</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">188</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -301,32 +297,30 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品4號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="treats">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good4treats.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 陪睡小娃娃</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB12348</span></li>
+                      <li>產品敘述： <br>每隻成功的狗背後都有一隻娃娃</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">88</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
+
                     </select>
                   </div>
                   <div class="mb-3">
@@ -340,32 +334,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品5號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="food">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good5foog.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 歐若肥</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB12349</span></li>
+                      <li>產品敘述：<br>幼犬、老犬、吃不胖的犬適宜</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">888</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -379,32 +370,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品6號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="food">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good6food.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 包你瘦</h5>
                   <p class="card-text">
                     <ul>
                       <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li>產品敘述：<br>不要吃太胖，會被殺掉</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">788</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -418,32 +406,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品7號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="snacks">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good7snacks.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 媽媽砸摳棒棒糖</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB54322</span></li>
+                      <li>產品敘述：<br>小時候的回憶，毛孩也值得擁有</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">100</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -457,32 +442,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品8號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="snacks">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good8snacks.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 經典零食分享組合</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB54323</span></li>
+                      <li>產品敘述：<br>獨樂樂不如眾樂樂</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">358</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -496,32 +478,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品9號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="chew">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good9snacks.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 高級進口零食</h5>
                   <p class="card-text">
                     <ul>
                       <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li>產品敘述：<br>高級就是貴的意思</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">288</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -535,32 +514,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品10號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="chew">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good10chew.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 潔牙骨</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB54324</span></li>
+                      <li>產品敘述：<br>吃完潔牙骨還是要記得刷牙</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">888</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -574,32 +550,29 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品11號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="snacks">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good11chew.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 精緻零食乖乖桶</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB54325</span></li>
+                      <li>產品敘述：<br>適合公主小狗帶出去外面炫富</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">888</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
                         <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="F">F</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -613,33 +586,31 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
             <!-- 產品12號 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-5 product-card" data-category="tug">
               <div class="card">
-                <img src="./image/LOGO.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><i ></i> 三號牽繩</h5>
+                <img src="./image/good12tug.jpg" class="card-img-top">
+                <div class="card-body"  style="height: 350px;">
+                  <h5 class="card-title product-name"><i ></i> 拉扯玩具</h5>
                   <p class="card-text">
                     <ul>
-                      <li><i></i>產品編號： <span class="product-id">AB54321</span></li>
-                      <li>產品敘述</li>
-                      <li>$ NT: <span class="price">1088</span></li>
-                      <li><strong>一次下單超過五件，請與我們聯絡</strong></li>
+                      <li><i></i>產品編號： <span class="product-id">AB54326</span></li>
+                      <li>產品敘述：你不陪他玩，他就拆家給你看</li>
+                      <li>一次下單超過五件，請與我們聯絡</li>
+                      <li><strong>$ NT: <span class="price">188</strong></span></li>
                     </ul>
                   </p>
                   <div class="mb-1">
                     <label class="form-label">商品尺寸</label>
                     <select class="form-select size-select">
-                        <option selected>選擇尺寸</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                        <option selected>選擇樣式，左到右為ABC</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>                    </select>
                   </div>
                   <div class="mb-3">
                     <label class="form-label">選擇數量</label>
@@ -652,7 +623,7 @@
                         <option value="5">5</option>
                     </select>
                   </div>
-                  <button class="btn btn-success w-100 add-to-cart-button">加入購物車</button>
+                  <button class="btn btn-outline-success w-100 add-to-cart-button">加入購物車</button>
                 </div>
               </div>
             </div>
@@ -662,6 +633,15 @@
         
       </div>
       </div>
+
+<!-- 購物車按鈕 -->
+  <a href="#containerShop">
+    <button class="cart-button">
+      <i class="bi bi-cart4"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </a>
+
  <!-- 購物車 -->
   <div class="container-fluid" id="containerShop">
         <div class="inner-wrapper">
@@ -714,7 +694,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="./js/script.js" defer></script>  
+<script src="./js/scriptStore.js" defer></script>  
 </body>
 </html>
 

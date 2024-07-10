@@ -4,24 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>犬屯區狗奴交流網</title>
+    <meta property="fb:app_id" content="2237932996567914" />
+    <meta property="fb:admins" content="1679023982" />
+
     <link rel="shortcut icon" href="./image/favicon.icon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
     <script src="script.js" defer></script>
+    <script src="./js/scriptIndex.js" defer></script>
     <style>
       .titleBanner{
-        background-image: url(./image/bannerTransparent.png);
+        background-image: 
+        url(./image/bannerTransparent.png),
+        linear-gradient(60deg, rgb(233, 236, 183) 0%, rgb(16, 135, 103));
         height: 70px;
         background-repeat: no-repeat;
         background-size:auto;
         background-position: center;
-        background-color: rgb(118, 151, 114);
         position: relative;
       }
+
+      .keyVisual{
+        background-image:url(./image/bannerIndex.png);
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height:300px; 
+        margin:0 -9px; 
+        padding:0; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+      }
+
+      @media (max-width: 767px) {
+      .keyVisual {
+        background-image: url('./image/bannerIndex_md.png');
+      }
+    }
     </style>
+    <!-- 臉書API -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v20.0" nonce="PNij7wql"></script>
+
   </head>
   <body>
+    
     <!-- Navbar -->
     <div class="sticky-top">
     <div class="titleBanner">
@@ -36,13 +64,13 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="./index.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 |　犬友交流區
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">|　活動消息</a></li>
-                <li><a class="dropdown-item" href="#">|　照片分享</a></li>
-                <li><a class="dropdown-item" href="#">|　遛狗五四三-留言板</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　活動消息</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　照片分享</a></li>
+                <li><a class="dropdown-item" href="./index.html">|　遛狗五四三-留言板</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">|　關於我們</a></li>
               </ul>
@@ -55,7 +83,7 @@
                 |　犬犬好去處
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">|　寵物專區公園</a></li>
+                <li><a class="dropdown-item" href="./pagePark.html">|　寵物專區公園</a></li>
                 <li><a class="dropdown-item" href="#">|　寵物友善場所</a></li>
                 <li><a class="dropdown-item" href="#">|　戶外遛狗景點</a></li>
               </ul>
@@ -66,7 +94,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./pageStore.html">|　犬犬百貨</a>
             </li>
-                          <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 |　會員專區
               </a>
@@ -74,7 +102,7 @@
                 <li><a class="dropdown-item" href="#">個人首頁</a></li>
                 <li><a class="dropdown-item" href="#">會員好康</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">登出</a></li>
+                <li><a class="dropdown-item" href="https://www.canva.com/design/DAGKjqlJvwg/YqEGz_f8S6fQA25d1nM6iQ/edit?utm_content=DAGKjqlJvwg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">登出</a></li>
               </ul>
             </li>
           </ul>
@@ -83,46 +111,163 @@
     </nav>
     </div>
 
-
-<!-- 主內容 -->
-<div class="container mt-5">
+    <!-- 主內容 -->
+<div class="container bg-light" style="height:auto;">
+  <!-- 主視覺照片 -->
+  <div class="keyVisual">
+  </div>
+ 
   <div class="row">
-    <div class="col-md-12">
-      <h1>不要灰心，做多少是多少，盡自己最大努力</h1>
-      <p>理想狀態是能夠套上餐廳的篩選器，還有購物車系統跟會員系統</p>
+  <!-- 左區-留言板 -->  
+    <div class="col-md-4 messageBoard mt-5"  style="height:auto; background-color: rgba(74, 74, 74, 0.1);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+     <!-- 標題 -->
+     <div class="messageBoards mt-5 mb-5">
+      <h5 class="boardWord mt-5"><i class="bi bi-chat-left-text-fill"></i> 遛狗五四三</h5>
+      <p class="boardWord2">狗奴們的即時留言版</p>
+     </div>
+      <!-- 臉書留言板 -->
+      <div class="fb-comments" data-href="http://127.0.0.1:5500/myDogWeb/index.html" data-width="auto" data-numposts="7"></div>
     </div>
+
+
+  <!-- 右區-最新消息、關於我們 -->
+    <div class="col-md-8 newsBoard mt-5"  style="height: auto;">
+     <!-- 最新消息標題 -->
+    <div class="news-board" style="border-radius: 20px; background-color: rgba(0, 0, 0, 0.2);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+     <div class="messageBoards mt-3 mb-3">
+      <h5 class="tagWord mb-3"><i class="bi bi-volume-up-fill"></i> 最新消息</h5>
+      <p class="tagWord2">寵物展、狗聚、活動看這邊</p>
+     </div>
+     <!-- 最新消息 -->
+      <div class="scrollContent">
+          <!-- 第一篇新聞 -->
+          <div class="newsBoard">
+            <img src="./image/news1.webp" alt="news" style="width:80%;">
+            <h2>
+              2024/07/19-22台中夏季寵物用品博覽會
+            </h2>
+            <h5>
+              家有巨喵帶領毛孩勇闖萌寵奇幻之旅！7/19(五)-7/22(一)邀請各位毛爸毛媽走進台中國際展覽館，一同進入專為毛孩打造的童話般獨特體驗，更規劃寵食午茶派對、奇妙清潔樂園、<span id="dots1">...</span><span id="more1" style="display:none;">夢幻童話寫真拍、魔法購物金、金鏟手大賽、罐罐爭霸賽...等多項獨家活動，讓心愛的毛孩與毛爸媽增進感情的同時， 還能補充滿滿的糧食！<br>
+              同步匯集全台各大寵物用品廠商，匯集人氣品牌齊聚參展，提供最新飼料零食、保健營養品、服飾配件、美容清潔、住宿醫療等週邊服務，秉持著分享產品、醫療、美容、行為、教育、實踐動物保護及動物福利等觀念，為寵物家族提供更好資訊，帶給飼主與寵物們最好的生活品質，打造一個健全優質的寵物展！更規畫一系列與愛寵同歡的趣味活動及公益活動愛心捐及認養將愛延續。<br>
+              展覽資訊：2024台中夏季寵物用品博覽會<br>
+              展出日期：2024年7月19日(五)~7月22日(一)<br>
+              展出時間：10:00~18:00 <br>
+              展出地點：台中國際展覽館 | 414台中市烏日區中山路三段1號
+              </span></h5>
+            <button onclick="indexMyFunction('dots1','more1',this)" id="myBtn">繼續閱讀</button>
+          </div>
+
+          <!-- 第二篇新聞 -->
+          <div class="newsBoard">
+            <img src="./image/news2.jpg" alt="news" style="width:80%;">
+            <h2>
+               毛小孩的有趣冷知識
+            </h2>
+            <h5>
+              「不論財產有多少,擁有一條狗你就更富有」－路易斯・沙賓
+              雖然我們沒有能與狗狗直接言語溝通的能力，但你不難從生活細節中發現牠有多麼需要你。
+              對你來說，狗狗可能是你的好夥伴、好家人；但對狗狗來說，你是牠的這一輩子。
+              我想邀請你一起探索屬於汪星人的十個冷知識，並且幫助你更加瞭解每天陪伴著你的牠～
+              <span id="dots2">...</span><span id="more2" style="display:none;">
+                冷知識１：狗狗們的鼻紋是獨一無二的 <br>
+                冷知識２：剛生出來的小狗狗其實看不見也聽不到 <br>
+                冷知識３：狗狗最喜歡被摸肚肚！ <br>
+                冷知識４：狗狗會做夢也會打呼 <br>
+                冷知識５：狗狗頻繁放臭屁可能是身體存有隱患！ <br>
+                冷知識６：狗狗嗅覺能力堪稱頂尖 <br>
+                冷知識７：狗狗尿尿抬腿不是裝可愛，而是一種支配行為 <br>
+                冷知識８：狗狗不知道自己已經吃飽了 <br>
+                冷知識９：狗狗的肉掌不會凍傷但是會燙傷！ <br>
+                冷知識１０：狗狗能感知你的情緒 並且做最好的陪伴者 。
+
+              </span></h5>
+            <button onclick="indexMyFunction('dots2','more2',this)" id="myBtn">繼續閱讀</button>
+          </div>
+      </div>
+    </div>
+      <!-- 輪播牆標題 -->
+      <div class="news-board mt-3" style="border-radius: 20px; background-color: rgba(0, 0, 0, 0.7);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+       <div class="messageBoards mt-3 mb-3">
+        <h5 class="tagWord- mb-3"><i class="bi bi-volume-up-fill"></i> 奴才投稿區</h5>
+        <p class="tagWord2-">分享你們家主子的相片</p>
+     </div>
+     <!-- 輪播牆 -->
+     <div class="slideshow-container">
+
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"> 暫時保留不用 </div> -->
+          <img src="./image/dogbanner1.jpg" style="width:100%">
+          <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>     
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+      </div>
+      
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"> 暫時保留不用 </div> -->
+          <img src="./image/dogbanner3.jpg" style="width:100%">
+          <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>     
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+      </div>
+      
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"> 暫時保留不用 </div> -->
+          <img src="./image/dogbanner4.jpg" style="width:100%">
+          <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>     
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+      </div>
+      
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"> 暫時保留不用 </div> -->
+          <img src="./image/dogbanner5.jpg" style="width:100%">
+          <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>     
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+      </div>
+      
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"> 暫時保留不用 </div> -->
+          <img src="./image/dogbanner2.jpg" style="width:100%">
+          <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>     
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class = "next" onclick="plusSlides(1)">&#10095</a>
   </div>
 
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="./image/dog.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="./image/dog.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="./image/dog.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
