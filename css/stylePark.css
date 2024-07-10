@@ -143,7 +143,11 @@
   .a-word2{
     background-color: rgb(42, 41, 41);
     color: aliceblue;
+<<<<<<< HEAD
     padding: 5px;
+=======
+    padding: 1px;
+>>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
     border-radius: 20px 3px 20px 3px;
     text-decoration: none;
     font-weight: bold;
