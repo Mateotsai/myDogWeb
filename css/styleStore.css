@@ -120,14 +120,13 @@
 
 .add-to-cart-button:active {
     box-shadow: 5px 5px 5px rgb(63, 65, 64);
-<<<<<<< HEAD
 }
 
 /* 結帳小按鈕 */
 .cart-button {
   position: fixed;
-  right: 20px; 
-  bottom: 140px; 
+  right: 5px; 
+  top: 75px; 
   background-color: #28a745; 
   color: white; 
   border: none; 
@@ -136,7 +135,7 @@
   font-size: 24px; 
   cursor: pointer; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000; 
+  z-index: 1030; 
 }
 
 .cart-button:hover {
@@ -152,6 +151,4 @@
   border-radius: 50%;
   padding: 2px 6px;
   font-size: 14px;
-=======
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
 }

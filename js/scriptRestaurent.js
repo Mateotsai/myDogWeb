@@ -64,13 +64,97 @@ document.addEventListener('DOMContentLoaded', function () {
             "services": ["寵物可落地"],
             "url": "#"
         },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
+        {
+            "name": "汪星人咖啡廳",
+            "image": "./image/rest1.png",
+            "district": "北屯區",
+            "services": ["寵物可落地", "寵物專屬空間"],
+            "url": "#"
+        },
         
        
     ];
 
     function renderProducts(filteredProducts) {
         const productContainer = document.getElementById('productContainer');
-        productContainer.innerHTML = ''; //清空容器
+        productContainer.innerHTML = ''; 
         filteredProducts.forEach(product => {
             const productCard = document.createElement('div');
             productCard.classList.add('col-lg-4', 'col-md-6', 'mt-3', 'product-card');
@@ -89,7 +173,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                  ${new Array(4 - product.services.length).fill('<li class="invisible">-</li>').join('')}
                             </ul>
                         </p>
-                        <a href="${product.url}" class="btn btn-success">店家官網</a>
+                        <a href="${product.url}" class="btn btn-outline-danger">店家官網</a>
+                        <a href="${product.url}" class="btn btn-outline-success">犬友評價</a>
                     </div>
                 </div>
             `;

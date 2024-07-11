@@ -30,13 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // 購物車
-<<<<<<< HEAD
   document.addEventListener('DOMContentLoaded', function() {
     let cartCount = 0;
 
-=======
-document.addEventListener('DOMContentLoaded', function() {
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
     document.body.addEventListener('click', function(event) {
         if (event.target.classList.contains('add-to-cart-button')) {
             const card = event.target.closest('.card');
@@ -55,33 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 name: productName,
                 id: productId,
                 size: size,
-<<<<<<< HEAD
                 quantity: parseInt(quantity),
-=======
-                quantity: quantity,
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
                 price: parseFloat(price),
                 totalPrice: quantity * parseFloat(price)
             };
 
             addToCart(product);
-<<<<<<< HEAD
             updateCartCount(product.quantity); 
-=======
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
         }
 
         if (event.target.classList.contains('delete')) {
             const item = event.target.closest('li');
-<<<<<<< HEAD
             const quantity = parseInt(item.getAttribute('data-quantity'));
             item.remove();
             updateTotalAmount();
             updateCartCount(-quantity); 
-=======
-            item.remove();
-            updateTotalAmount();
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
         }
     });
 
@@ -89,10 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const cartList = document.getElementById('cartList');
         const newItem = document.createElement('li');
         newItem.classList.add('item');
-<<<<<<< HEAD
         newItem.setAttribute('data-quantity', product.quantity); 
-=======
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
         newItem.innerHTML = `${product.name} - 尺寸: ${product.size} , 　數量: ${product.quantity} , 　金額:　$ ${product.totalPrice}
             <span class="delete"> </span>`;
 
@@ -102,10 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         newItem.querySelector('.delete').addEventListener('click', function() {
             newItem.remove();
             updateTotalAmount();
-<<<<<<< HEAD
             updateCartCount(-product.quantity); 
-=======
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
         });
     }
 
@@ -123,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('totalAmount').innerText = totalAmount.toFixed(2);
     }
 
-<<<<<<< HEAD
     function updateCartCount(change) {
         cartCount += change;
         document.getElementById('cartCount').innerText = cartCount;
@@ -144,16 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
     // 添加刪除按鈕的事件監控器
-=======
-    document.getElementById('checkoutButton').addEventListener('click', function() {
-        alert('結帳功能尚未實現'); // 這裡可以添加你的結帳邏輯
-    });
-});
-
-    
-
-    // 添加删除按钮的事件监听器
->>>>>>> 937deeff7df1b19460cf1b56925ac619caae1d40
     newItem.querySelector('.delete').addEventListener('click', function() {
         this.parentElement.remove();
 
